@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width: 1100px;
+            padding: 0 49px;
+            border: 1px solid grey;
+        }
+
+        .container > .content-main {
+            width: 700px;
+            background-color: mediumspringgreen;
+            height: 700px;
+            text-align: center;
+            color: white;
+            font-size: 34px;
+            line-height: 700px;
+        }
+
+        .container .content-second {
+            width: 300px;
+            background-color: orangered;
+            height: 700px;
+            text-align: center;
+            color: white;
+            font-size: 34px;
+            line-height: 700px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .container {
+                width: 100%;
+                padding: 0;
+                border: none;
+            }
+
+            .container > div {
+                width: 100%;
+            }
+
+            .container .content-second {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="content-main">Content main</div>
+    <div class="content-second">Sidebar</div>
+
+</div>
+
+
+</body>
+</html>
