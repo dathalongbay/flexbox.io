@@ -11,6 +11,34 @@
             margin: 0;
         }
 
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            height: 150px;
+            background-color: #0a55ea;
+            color: white;
+            margin: 0 auto;
+            width: 1100px;
+        }
+
+        header .logo-col {
+            width: 150px;
+            text-align: center;
+            height: 150px;
+            line-height: 150px;
+            font-size: 32px;
+            background-color: #1ccacd;
+        }
+
+        header .banner-col {
+            width: 950px;
+            text-align: center;
+            height: 150px;
+            line-height: 150px;
+            font-size: 32px;
+            background-color: grey;
+        }
+
         .container {
             display: flex;
             flex-wrap: wrap;
@@ -55,16 +83,34 @@
                 width: 100%;
             }
         }
+
+        footer {
+            height: 100px;
+            line-height: 100px;
+            background-color: #3a945b;
+            width: 1100px;
+            margin: 0 auto;
+            color: white;
+            font-size: 32px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
+<header>
+    <div class="logo-col">Logo</div>
+    <div class="banner-col">Banner</div>
+</header>
 
+<div class="container">
     <div class="content-main">Content main</div>
     <div class="content-second">Sidebar</div>
-
 </div>
+
+<footer>
+    Footer
+</footer>
 
 
 </body>
